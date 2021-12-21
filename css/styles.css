@@ -1,9 +1,10 @@
-/* Надо задавать только для верстки чтобы визуально видеть размеры блока, ставится для каждого элемента который хочется визуально увидеть
-body {
-  outline: 2px solid rgb(0, 253, 253);
-} */
-
 /* Глобальные свойства */
+
+/* outline nолько для верстки - закомментировать перед сдачей */
+* {
+  outline: 1px solid tomato;
+}
+
 :root {
   --logo-color: #2196f3;
   --primary-white-color: #ffffff;
@@ -22,8 +23,24 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .link {
@@ -42,6 +59,14 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Шапка сайта */
@@ -112,7 +137,6 @@ body {
 .hero-btn {
   color: var(--primary-white-color);
   background: var(--accent-color);
-  cursor: pointer;
 
   font-family: inherit;
   font-size: 16px;
@@ -194,7 +218,6 @@ body {
 
 .filter-btn {
   background-color: var(--secondary-background-color);
-  cursor: pointer;
 
   font-family: inherit;
   font-weight: 500;
