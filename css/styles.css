@@ -17,8 +17,9 @@ body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
 }
 
 .list {
@@ -49,12 +50,13 @@ body {
 }
 
 .header-nav-logo {
+  color: var(--logo-color);
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
 }
 
 .header-logo-black {
@@ -62,20 +64,22 @@ body {
 }
 
 .header-nav-link {
+  color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
 }
 
 .header-contact-mail,
 .header-contact-tel {
+  color: var(--secondary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 
 .header-nav-list .link:hover,
@@ -95,25 +99,27 @@ body {
 }
 
 .hero-title {
+  color: var(--primary-title-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-title-color);
 }
 
 .hero-btn {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  cursor: pointer;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -134,10 +140,11 @@ body {
 }
 
 .benefits-desc {
+  color: var(--secondary-text-color);
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 /* Рабочие процессы */
@@ -173,10 +180,11 @@ body {
 }
 
 .team-position {
+  color: var(--secondary-text-color);
+
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 /* Портфолио - Работы */
@@ -185,14 +193,15 @@ body {
 }
 
 .filter-btn {
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--secondary-background-color);
-  cursor: pointer;
 }
 
 .filter-btn:active,
@@ -203,16 +212,18 @@ body {
 }
 
 .gallery-title {
+  color: var(--primary-text-color);
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 
 .gallery-desc {
+  color: var(--secondary-text-color);
+
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 /* Подвал сайта */
@@ -221,12 +232,13 @@ body {
 }
 
 .footer-logo {
+  color: var(--logo-color);
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
 }
 
 .footer-logo-white {
@@ -234,20 +246,22 @@ body {
 }
 
 .footer-address-link {
+  color: var(--primary-white-color);
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-white-color);
 }
 
 .footer-address-mail,
 .footer-address-tel {
+  color: rgba(255, 255, 255, 0.6);
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-address .link:hover,
