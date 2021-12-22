@@ -1,6 +1,5 @@
 /* Глобальные свойства */
 
-/* outline nолько для верстки - закомментировать перед сдачей */
 * {
   outline: 1px solid tomato;
 }
@@ -40,6 +39,7 @@ p {
 }
 
 button {
+  border: none;
   cursor: pointer;
 }
 
@@ -71,10 +71,51 @@ button {
 
 /* Шапка сайта */
 .header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--primary-white-color);
 }
 
+.header > .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list > .header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .header-nav-list > .header-nav-item:last-child {
+  margin-right: 0;
+} */
+
+.header-contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .header-contact-list > .header-contact-item:last-child {
+  margin-right: 0;
+} */
+
 .header-nav-logo {
+  max-width: 145px;
+  margin-right: 93px;
+
   color: var(--logo-color);
 
   font-family: Raleway, sans-serif;
@@ -123,18 +164,34 @@ button {
   background-color: var(--primary-background-color);
 }
 
+.hero > .container {
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+
+  text-align: center;
+}
+
 .hero-title {
+  max-width: 696px;
+  margin-bottom: 30px;
+
   color: var(--primary-title-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-btn {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+
   color: var(--primary-white-color);
   background: var(--accent-color);
 
@@ -142,7 +199,6 @@ button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -156,7 +212,30 @@ button {
   background-color: var(--primary-white-color);
 }
 
+.benefits > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  max-width: 270px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .benefits-list > .benefits-item:last-child {
+  margin-right: 0;
+} */
+
 .benefits-subtitle {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -172,15 +251,35 @@ button {
 }
 
 /* Рабочие процессы */
+
 .process {
   background-color: var(--primary-white-color);
 }
 
+.process > .container {
+  padding-bottom: 94px;
+}
+
 .process-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.process-image {
+  display: block;
+  max-width: 100%;
+}
+
+.process-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.process-list {
+  display: flex;
 }
 
 /* Команда */
@@ -188,14 +287,45 @@ button {
   background-color: var(--secondary-background-color);
 }
 
+.team > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+}
+
 .team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+.team-item {
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.team-image {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -212,6 +342,7 @@ button {
 }
 
 /* Портфолио - Работы */
+
 .section {
   background-color: var(--primary-white-color);
 }
@@ -254,7 +385,18 @@ button {
   background-color: var(--primary-background-color);
 }
 
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .link {
+  display: block;
+}
+
 .footer-logo {
+  margin-bottom: 20px;
+
   color: var(--logo-color);
 
   font-family: Raleway, sans-serif;
@@ -266,6 +408,10 @@ button {
 
 .footer-logo-white {
   color: var(--primary-white-color);
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-address-link {
