@@ -1,8 +1,8 @@
 /* Глобальные свойства */
 
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 :root {
   --logo-color: #2196f3;
@@ -14,6 +14,7 @@
   --primary-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --accent-color: #2196f3;
+  --gallery-item-margin: 30px;
 }
 
 body {
@@ -68,6 +69,13 @@ button {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+/*
+В макете у секций разные паддинги, поэтому расставил все паддинги по макету
+  .section { 
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 /* Шапка сайта */
 .header {
@@ -161,20 +169,20 @@ button {
 
 /* Герой */
 .hero {
-  background-color: var(--primary-background-color);
-}
-
-.hero > .container {
   padding-top: 200px;
-  padding-right: 252px;
   padding-bottom: 200px;
-  padding-left: 252px;
+
+  background-color: var(--primary-background-color);
 
   text-align: center;
 }
 
+.hero > .container {
+  padding-right: 252px;
+  padding-left: 252px;
+}
+
 .hero-title {
-  max-width: 696px;
   margin-bottom: 30px;
 
   color: var(--primary-title-color);
@@ -188,8 +196,7 @@ button {
 
 .hero-btn {
   display: inline-block;
-  min-width: 200px;
-  min-height: 50px;
+  padding: 10px 32px;
   border-radius: 4px;
 
   color: var(--primary-white-color);
@@ -212,7 +219,7 @@ button {
   background-color: var(--primary-white-color);
 }
 
-.benefits > .container {
+.benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -253,11 +260,9 @@ button {
 /* Рабочие процессы */
 
 .process {
-  background-color: var(--primary-white-color);
-}
-
-.process > .container {
   padding-bottom: 94px;
+
+  background-color: var(--primary-white-color);
 }
 
 .process-title {
@@ -284,12 +289,10 @@ button {
 
 /* Команда */
 .team {
-  background-color: var(--secondary-background-color);
-}
-
-.team > .container {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--secondary-background-color);
 }
 
 .team-list {
@@ -343,11 +346,14 @@ button {
 
 /* Портфолио - Работы */
 
-.section {
+.works {
   background-color: var(--primary-white-color);
 }
 
 .filter-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+
   background-color: var(--secondary-background-color);
 
   font-family: inherit;
@@ -365,7 +371,23 @@ button {
   background: var(--accent-color);
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.gallery-image {
+  margin-bottom: 20px;
+}
+
 .gallery-title {
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -378,6 +400,39 @@ button {
 
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--gallery-item-margin));
+  margin-left: calc(-1 * var(--gallery-item-margin));
+}
+
+.gallery-item {
+  flex-basis: calc(100% / 3 - var(--gallery-item-margin));
+  margin-top: var(--gallery-item-margin);
+  margin-left: var(--gallery-item-margin);
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* .gallery-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+.gallery-text-container {
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.gallery-image {
+  display: block;
 }
 
 /* Подвал сайта */
