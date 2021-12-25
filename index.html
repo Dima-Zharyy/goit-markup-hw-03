@@ -28,7 +28,7 @@
           <a class="link header-nav-logo" href="./index.html" lang="en"
             >Web<span class="header-logo-black">Studio</span></a
           >
-          <ul class="list header-nav-list">
+          <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="link header-nav-link current" href="./index.html">Студия</a>
             </li>
@@ -38,7 +38,7 @@
             <li class="header-nav-item"><a class="link header-nav-link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list header-contact-list">
+        <ul class="header-contact-list">
           <li class="header-contact-item">
             <a class="link header-contact-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -52,17 +52,17 @@
     </header>
     <main>
       <!-- Герой -->
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!-- Преимущества -->
-      <section class="section benefits">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества компании</h2>
-          <ul class="list benefits-list">
+          <ul class="benefits-list">
             <li class="benefits-item">
               <h3 class="benefits-subtitle">Внимание к деталям</h3>
               <p class="benefits-desc">
@@ -94,10 +94,9 @@
       <section class="section process">
         <div class="container">
           <h2 class="process-title">Чем мы занимаемся</h2>
-          <ul class="list process-list">
+          <ul class="process-list">
             <li class="process-item">
               <img
-                class="process-image"
                 src="./images/what-we-do-img-1.jpg"
                 alt="сотрудник печатает текст"
                 width="370"
@@ -106,7 +105,6 @@
             </li>
             <li class="process-item">
               <img
-                class="process-image"
                 src="./images/what-we-do-img-2.jpg"
                 alt="сотрудник выбирает макет"
                 width="370"
@@ -115,7 +113,6 @@
             </li>
             <li class="process-item">
               <img
-                class="process-image"
                 src="./images/what-we-do-img-3.jpg"
                 alt="сотрудник выбирает цвет"
                 width="370"
@@ -129,50 +126,49 @@
       <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list team-list">
+          <ul class="team-list">
             <li class="team-item">
               <img
-                class="team-image"
                 src="./images/our-team-img-1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-position" lang="en">Product Designer</p>
+              <div class="team-text-container">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-position" lang="en">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/our-team-img-2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <div class="team-text-container">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
-                class="team-image"
-                src="./images/our-team-img-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-position" lang="en">Frontend Developer</p>
-            </li>
-            <li class="team-item">
-              <img
-                class="team-image"
                 src="./images/our-team-img-3.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-position" lang="en">Marketing</p>
+              <div class="team-text-container">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
-                class="team-image"
                 src="./images/our-team-img-4.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-position" lang="en">UI Designer</p>
+              <div class="team-text-container">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -185,7 +181,7 @@
           >Web<span class="footer-logo-white">Studio</span></a
         >
         <address class="footer-address">
-          <ul class="list footer-address-list">
+          <ul class="footer-address-list">
             <li class="footer-address-item">
               <a
                 class="link footer-address-link"

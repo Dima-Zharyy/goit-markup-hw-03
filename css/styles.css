@@ -33,7 +33,7 @@ p {
   margin: 0;
 }
 
-.list {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -42,6 +42,12 @@ p {
 button {
   border: none;
   cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -60,6 +66,13 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--primary-white-color);
 }
 
 .container {
@@ -83,10 +96,13 @@ button {
   background-color: var(--primary-white-color);
 }
 
-.header > .container {
-  display: flex;
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.header > .container {
+  display: flex;
 }
 
 .header-nav {
@@ -98,7 +114,7 @@ button {
   align-items: center;
 }
 
-.header-nav-list > .header-nav-item:not(:last-child) {
+.header-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -177,12 +193,10 @@ button {
   text-align: center;
 }
 
-.hero > .container {
-  padding-right: 252px;
-  padding-left: 252px;
-}
-
 .hero-title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   color: var(--primary-title-color);
@@ -215,15 +229,6 @@ button {
 }
 
 /* Преимущества */
-.benefits {
-  background-color: var(--primary-white-color);
-}
-
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefits-list {
   display: flex;
 }
@@ -260,9 +265,7 @@ button {
 /* Рабочие процессы */
 
 .process {
-  padding-bottom: 94px;
-
-  background-color: var(--primary-white-color);
+  padding-top: 0;
 }
 
 .process-title {
@@ -272,11 +275,6 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.process-image {
-  display: block;
-  max-width: 100%;
 }
 
 .process-item:not(:nth-child(3n)) {
@@ -289,9 +287,6 @@ button {
 
 /* Команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--secondary-background-color);
 }
 
@@ -309,8 +304,7 @@ button {
 }
 
 .team-item {
-  padding-bottom: 30px;
-
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -320,10 +314,9 @@ button {
   margin-right: 30px;
 }
 
-.team-image {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 30px;
+.team-text-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -381,10 +374,6 @@ button {
   margin-right: 8px;
 }
 
-.gallery-image {
-  margin-bottom: 20px;
-}
-
 .gallery-title {
   margin-bottom: 4px;
 
@@ -402,11 +391,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-.works {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +402,6 @@ button {
   flex-basis: calc(100% / 3 - var(--gallery-item-margin));
   margin-top: var(--gallery-item-margin);
   margin-left: var(--gallery-item-margin);
-  border-bottom: 1px solid #eeeeee;
 }
 
 /* .gallery-item:not(:nth-child(3n)) {
@@ -426,23 +409,25 @@ button {
 } */
 
 .gallery-text-container {
+  padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-}
 
-.gallery-image {
-  display: block;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* Подвал сайта */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--primary-background-color);
 }
 
 .footer > .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer .link {
